@@ -27,19 +27,19 @@
 				</div>
 				<!-- Menu de navegación -->
 				<nav class="col-md-12 col-lg-auto menu d-flex align-items-stretch flex-wrap flex-sm-nowrap">
-					<a href="/" class="c-1 d-flex align-items-center">
+					<a href="{% url 'portfolio' %}" class="c-1 d-flex align-items-center">
 						<div class="d-flex flex-column text-center">
 							<span>Portafolio</span>
 							<i class="icono icon-briefcase"></i>
 						</div>
 					</a>
-					<a href="/about" class="c-2 d-flex align-items-center">
+					<a href="{% url 'about' %}" class="c-2 d-flex align-items-center">
 						<div class="d-flex flex-column text-center">
 							<span>Acerca de</span>
 							<i class="icono icon-user"></i>
 						</div>
 					</a>
-					<a href="/contact" class="c-3 d-flex align-items-center">
+					<a href="{% url 'contact' %}" class="c-3 d-flex align-items-center">
 						<div class="d-flex flex-column text-center">
 							<span>Contacto</span>
 							<i class="icono icon-mail"></i>
