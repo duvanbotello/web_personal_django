@@ -5,6 +5,7 @@ class Project(models.Model):
     title = models.CharField(max_length=200, verbose_name="Titulo")
     description = models.TextField(verbose_name="Descripcion")
     image = models.ImageField(verbose_name="Imagen", upload_to="Project") # upload_to me dice donde guardar la media de la app media
+    link = models.URLField(null=True, blank=True, verbose_name="Direccion Web" )
     created = models.DateTimeField(auto_now_add=True,verbose_name="Fecha de creacion")
     updated = models.DateTimeField(auto_now_add=True,verbose_name="Fecha de Edicion")
 
@@ -14,5 +15,6 @@ class Project(models.Model):
     class Meta:
         verbose_name = "Proyecto"
         verbose_name_plural = "Proyectos"
+        ordering = ["-created"]
 
 
